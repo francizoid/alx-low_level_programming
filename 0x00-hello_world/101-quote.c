@@ -2,9 +2,9 @@
 2   #include <unistd.h>
 3
 4   /**
-5   /* main - print quote */
+5   /** main - print quote **/
 6    *
-7    * Description: prints Dora's quote
+7    * Description : prints Dora's quote
 8    *
 9    * Return: Always l (Success)
 10   * /
