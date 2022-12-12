@@ -39,8 +39,10 @@ int main(void)
 				m = 48;
 				k++;
 			}
-			i++;
+			j++;
 		}
-		putchar(10);
-		return (0);
+		i++;
+	}
+	putchar(10);
+	return (0);
 }
