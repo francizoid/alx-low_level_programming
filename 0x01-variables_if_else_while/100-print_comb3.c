@@ -1,42 +1,36 @@
+/*
+ * File: 100-print_comb3.c
+ * Auth: Brennan D Baraban
+ */
+
 #include <stdio.h>
 
 /**
- * main - print double digit combos
+ * main - prints all possible combinations of two different digits,
+ *	in ascending order, separated by a comma followed by a space.
  *
- * Description: print double digit combos
- *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
-
 int main(void)
 {
-	int i, j;
+	int digit1, digit2;
 
-	i = 48;
-	j = 48;
-
-	while (i < 58)
+	for (digit1 = 0; digit1 < 9; digit1++)
 	{
-		j = i + 1;
-		while (j < 58)
+		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
 		{
+			putchar((digit1 % 10) + '0');
+			putchar((digit2 % 10) + '0');
 
-			putchar(i);
-			putchar(j);
+			if (digit1 == 8 && digit2 == 9)
+				continue;
 
-			if (i < 56 || j < 57)
-			{
-				putchar(44);
-				putchar(32);
-			}
-			j++;
+			putchar(',');
+			putchar(' ');
 		}
-
-		i++;
 	}
 
-	putchar(10);
+	putchar('\n');
 
 	return (0);
 }
-	
