@@ -1,18 +1,20 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_line - prints a line of underscores of a given length
- *
- * @n: length of line to print
+ * print_line - prints a line of n long
+ * @n: length of line
  *
  * Return: void
  */
+
 void print_line(int n)
 {
-	while (n > 0)
+	int line = 0;
+
+	while (line < n)
 	{
 		_putchar('_');
-		n--;
+		line++;
 	}
 	_putchar('\n');
 }
